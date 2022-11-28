@@ -1,0 +1,22 @@
+.partner {
+  padding: 60px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.partner__container .section__title {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.partner__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}

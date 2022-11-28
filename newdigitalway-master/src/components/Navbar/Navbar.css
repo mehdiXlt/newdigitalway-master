@@ -1,0 +1,158 @@
+.topbar{
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.sidebar{
+  display: flex;
+  justify-content: center;
+}
+
+
+.nav__logo{
+  cursor: pointer;
+}
+
+.nav__logo-img{
+  cursor: pointer;
+  z-index: 100;
+  width: 50% !important ;
+}
+
+.menu{
+  display: flex;
+}
+
+.nav__list{
+  display: flex;
+}
+
+.nav__link{
+  height: 100%;
+  line-height: 100px;
+  padding: 0 1rem;
+  color: #fff;
+  transition: .4s;
+  padding: 10px 40px;
+  border-radius: 4px;
+}
+
+.nav__toggle{
+  height: 32px;
+  width: 36px;
+  cursor: pointer;
+  position: fixed;
+  right: 1.5rem;
+  top: 2rem;
+  font-size: 1.2rem;
+  border-radius: .25rem;
+  background-color: #216DFF;
+  color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__close{
+  font-size: 1.5rem;
+  position:absolute;
+  top: 1rem;
+  right: 1.25rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Active Link */ 
+.nav__link:hover{
+  color: #fff;
+  background-color: #216DFF;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 576px) {
+  
+  .sidebar{
+    width: 100%;
+    height: 1vh;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.show-sidebar{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020529;
+}
+
+.nav__logo,
+.btn__share{
+    display: none;
+}
+
+.nav__menu{
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg) translateX(0);
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list{
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link{
+    padding: 1rem 0;
+    padding: 20px 40px;
+}
+
+.nav__link.active-link::after , .nav__link:hover::after{
+    bottom: 0;
+}
+
+.nav__close{
+    display: block;
+}
+
+.nav__toggle{
+    display: flex;
+    cursor: pointer;
+    z-index: 1000;
+    right: initial;
+    left: 1.5rem;
+}
+.nav__close{
+  top: 5%;
+  right: 10%;
+  color: #fff;
+  transition: .5s;
+}
+
+.nav__close:hover{
+  transform: rotate(90deg);
+}
+  
+}

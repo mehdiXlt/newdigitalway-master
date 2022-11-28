@@ -1,0 +1,138 @@
+.header {
+  height: 100vh;
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 120px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.header__content h1 {
+  width: 700px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 157.5%;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header__content h1::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 8px;
+  background-color: #216dff;
+  bottom: -20px;
+  left: 0;
+  border-radius: 25px;
+}
+
+.header__content h1 span {
+  color: var(--color);
+}
+
+.header__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ 
+}
+
+.header__img {
+  height: 590px;
+}
+
+.header__box {
+  width: 207px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0b0b4a;
+  border-radius: 8px;
+}
+
+.header__box img {
+  width: 70px;
+}
+
+.header__box p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .header{
+    overflow-x: hidden ;
+    height: auto;
+  }
+
+  .header__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .header__content h1{
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .header__content h1::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 4px;
+    background-color: #216dff;
+    bottom: -20px;
+    left: 0;
+    border-radius: 25px;
+  }
+  
+  .header__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin-bottom: 4rem;
+  }
+  
+  .header__box:first-child{
+    background-color: #216dff;
+  }
+
+  .header__box{
+    width: 180px;
+    height: 180px;
+  }
+
+  .header__img{
+    display: none;
+  }
+
+  
+}

@@ -1,0 +1,70 @@
+.offre {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.offre .offre__title {
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.offre__title span {
+  color: #216dff;
+}
+
+.offre .offre__subtitle {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.offre .offre__info {
+  width: 30%;
+}
+
+.offre__info .inputBox {
+  margin-bottom: 20px;
+}
+
+.cv__title {
+  font-size: 13px;
+}
+
+label {
+  cursor: pointer;
+  width: 100%;
+  padding: 5px 30px;
+  margin-right: 20px;
+  border: none;
+  background-color: #216dff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 97%;
+  /* Style as you please, it will become the visible UI component. */
+}
+.upload {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #0b0b4a;
+  margin-bottom: 20px;
+}
+#upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.custom__msg {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}

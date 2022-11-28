@@ -1,0 +1,36 @@
+.main {
+  height: 80vh;
+  background-image: url(../../assets/image/download.svg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  background-color: #060b2a;
+}
+
+.main p {
+  font-weight: 700;
+  font-size: 44.46px;
+  line-height: 147.5%;
+  /* or 66px */
+  text-align: center;
+  text-transform: uppercase;
+  width: 1390px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 576px){
+  .main{
+    height: 40vh;
+  }
+  
+  .main p{
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

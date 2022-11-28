@@ -1,0 +1,26 @@
+[
+  {
+    "logo": "/svg/expertise.svg",
+    "title": "Expertise"
+  },
+  {
+    "logo": "/svg/qualité.svg",
+    "title": "Qualité"
+  },
+  {
+    "logo": "/svg/prix.svg",
+    "title": "Excellent prix"
+  },
+  {
+    "logo": "/svg/profession.svg",
+    "title": "professionnalisme"
+  },
+  {
+    "logo": "/svg/prix.svg",
+    "title": "respect timing"
+  },
+  {
+    "logo": "/svg/responsable.svg",
+    "title": "Responsabilité"
+  }
+]
