@@ -1,4 +1,5 @@
 .about {
+  width: 100%;
   height: 100%;
   background-color: #fff;
 }
@@ -36,6 +37,15 @@
 
 .about__desc .about__btn a {
   color: #216dff;
+}
+@media screen and (max-width:1216px) {
+  
+}
+@media screen and (max-width:1024px) {
+  
+}
+@media screen and (max-width:768px) {
+  
 }
 
 @media screen and (max-width: 576px) {

@@ -18,57 +18,17 @@ const Navbar = () => {
     
     return (
         <>
-            {/* <nav className="nav">
-                <div className="nav__logo">
-                    <a href="/">
-                        <img src={logo} alt="" />
-                    </a>
-                </div>
-                <div className="nav__menu">
-                    <ul className="nav__list">
-                        <li className="nav__item">
-                            <a href="/" className="nav__link">
-                                Accueil
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#about" className="nav__link">
-                                à propos de nous
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#service" className="nav__link">
-                                Nos services
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <Link to="/emploi">
-                                <a href="/" className="nav__link">
-                                    Emploi
-                                </a>
-                            </Link>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#contact" className="nav__link">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> */}
-
             <div className='nav__toggle' id='nav-toggle' onClick={()=>{
                 setSidebar(true)
             }}>
                 <CgMenuLeft />
             </div>
 
-            <div className={`sidebar ${sidebar && 'show-sidebar'}`}>
+            <div className={`sidebar container ${sidebar && 'show-sidebar'}`}>
                 <nav className='nav'>
                     <div className='nav__logo'>
                         <a href='#home' className='nav__logo-text'>
-                            <img src={logo} alt='Gaya361' className='nav__logo-img' />
+                            <img src={logo} alt='New digital way' className='nav__logo-img' />
                         </a>
                     </div>
             

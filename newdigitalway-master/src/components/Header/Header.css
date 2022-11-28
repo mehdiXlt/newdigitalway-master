@@ -1,8 +1,9 @@
 .header {
-  height: 100vh;
+  height: 100%;
   position: relative;
   margin-top: 60px;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin-bottom: 4rem;
 }
 
 .header__container {
@@ -19,7 +20,6 @@
 }
 
 .header__content h1 {
-  width: 700px;
   font-weight: 600;
   font-size: 55px;
   line-height: 157.5%;
@@ -47,11 +47,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
- 
 }
 
 .header__img {
-  height: 590px;
+  height: 60vh;
 }
 
 .header__box {
@@ -65,9 +64,7 @@
   border-radius: 8px;
 }
 
-.header__box img {
-  width: 70px;
-}
+
 
 .header__box p {
   color: #fff;
@@ -75,64 +72,83 @@
   font-weight: 600;
   font-size: 15px;
 }
-
-@media screen and (max-width: 576px) {
-  .header{
-    overflow-x: hidden ;
-    height: auto;
+@media screen and (max-width:1216px) {
+  .header {
+    width: 100%;
+    margin-top: 60px;
+    overflow-x: hidden;
+    margin-bottom: 4rem;
   }
-
-  .header__container{
+  
+  .header__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    gap: 0px;
   }
-
+  
   .header__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 3rem;
+    justify-content: space-between;
+    gap: 100px;
   }
-
-  .header__content h1{
+  
+  .header__content h1 {
+    font-weight: 600;
     font-size: 2rem;
-    width: 80%;
+    line-height: 157.5%;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
   }
-
+  
   .header__content h1::after {
     content: '';
     position: absolute;
-    width: 10%;
-    height: 4px;
+    width: 20%;
+    height: 8px;
     background-color: #216dff;
     bottom: -20px;
     left: 0;
     border-radius: 25px;
   }
   
+  
   .header__info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px 20px;
-    margin-bottom: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
   
-  .header__box:first-child{
-    background-color: #216dff;
+  .header__img {
+    width: 30vw;
   }
-
-  .header__box{
+  
+  .header__box {
     width: 180px;
     height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0b0b4a;
+    border-radius: 8px;
   }
-
-  .header__img{
-    display: none;
-  }
-
   
+  .header__box p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:1024px) {
+  
+}
+@media screen and (max-width:768px) {
+  
+}
+
+@media screen and (max-width: 576px) {
+
 }

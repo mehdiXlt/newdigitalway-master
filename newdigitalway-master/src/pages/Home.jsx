@@ -8,9 +8,12 @@ import Navbar from '../components/Navbar/Navbar'
 import Partenaire from '../components/Partenaire/Partenaire'
 import Service from '../components/Service/Service'
 
+import '../App.css'
+
+
 const Home = () => {
     return (
-        <div>
+        <div className='main__home'>
             <Navbar />
             <Header />
             <About />
